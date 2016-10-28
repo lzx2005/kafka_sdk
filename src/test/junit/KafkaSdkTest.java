@@ -1,6 +1,5 @@
-import com.yecredit.kafka.consumer.YscreditKafkaConsumer;
-import com.yecredit.kafka.producer.YscreditKafkaProducerFactory;
-import com.yecredit.kafka.sender.KafkaSender;
+import com.lzx2005.kafka.consumer.KafkaConsumer;
+import com.lzx2005.kafka.producer.KafkaProducerFactory;
 import org.apache.kafka.clients.producer.Callback;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerRecord;
@@ -14,11 +13,10 @@ public class KafkaSdkTest {
 
     @Test
     public void testProducer(){
-        //String server = "10.1.1.83:9092,10.1.1.84:9092,10.1.1.85:9092";
-        String server = "10.1.1.25:9092";
+        String server = "localhost:9092";
         String topic = "test";
         String message = "hello world";
-        YscreditKafkaProducerFactory producerFactory = new YscreditKafkaProducerFactory(server);
+        KafkaProducerFactory producerFactory = new KafkaProducerFactory(server);
         //创建producer
         KafkaProducer producer = producerFactory.createProducer();
 
@@ -41,7 +39,7 @@ public class KafkaSdkTest {
     public void testConsumer(){
         String topics = "test,test2,test3";
         String kafkaServer = "localhost:9092";
-        YscreditKafkaConsumer ys = new YscreditKafkaConsumer(topics,kafkaServer);
+        KafkaConsumer ys = new KafkaConsumer(topics,kafkaServer);
         ys.start();
     }
 

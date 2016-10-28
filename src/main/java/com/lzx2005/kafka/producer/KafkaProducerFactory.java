@@ -1,4 +1,4 @@
-package com.yecredit.kafka.producer;
+package com.lzx2005.kafka.producer;
 
 import org.apache.kafka.clients.producer.*;
 
@@ -6,14 +6,12 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.*;
 
-// TODO: 2016/10/27 0027 编写可以异步且不会内存溢出的方法
-
 /**
  * @author lizhengxian
  * @date 2016.10.27
  * @version 1.0.0
  */
-public class YscreditKafkaProducerFactory {
+public class KafkaProducerFactory {
 
     /**
      * 全局配置文件，可以使用setProperties()方法更新或者loadProperties替换
@@ -24,7 +22,7 @@ public class YscreditKafkaProducerFactory {
     /**
      * 实例化一个YscreditKafkaProducer
      */
-    public YscreditKafkaProducerFactory(String kafkaServers){
+    public KafkaProducerFactory(String kafkaServers){
         super();
         this.properties = new Properties();
         InputStream ins = Object.class.getResourceAsStream("/defaultKafkaProducer.properties");
@@ -87,8 +85,8 @@ public class YscreditKafkaProducerFactory {
         //初始化工厂
         String topic = "test1";
         String message = "hello world";
-        String server = "10.1.1.25:9092";
-        YscreditKafkaProducerFactory producerFactory = new YscreditKafkaProducerFactory(server);
+        String server = "localhost:9092";
+        KafkaProducerFactory producerFactory = new KafkaProducerFactory(server);
 
         //配置一些属性
         producerFactory.setProperty("zookeeper.session.timeout.ms","400000");

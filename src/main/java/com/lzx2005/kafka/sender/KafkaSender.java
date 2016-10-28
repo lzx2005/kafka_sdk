@@ -1,6 +1,6 @@
-package com.yecredit.kafka.sender;
+package com.lzx2005.kafka.sender;
 
-import com.yecredit.kafka.producer.YscreditKafkaProducerFactory;
+import com.lzx2005.kafka.producer.KafkaProducerFactory;
 import org.apache.kafka.clients.producer.Callback;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerRecord;
@@ -40,7 +40,7 @@ public class KafkaSender extends Thread{
             final String firstMessage = getMessage();
             if(firstMessage!=null){
                 System.out.println("线程["+Thread.currentThread().getId()+"]发送数据["+firstMessage+"]到Kafka，正在等待响应...");
-                YscreditKafkaProducerFactory producerFactory = new YscreditKafkaProducerFactory(servers);
+                KafkaProducerFactory producerFactory = new KafkaProducerFactory(servers);
                 KafkaProducer producer = producerFactory.createProducer();
                 producer.send(new ProducerRecord(topic, firstMessage), new Callback() {
                     public void onCompletion(RecordMetadata metadata, Exception exception) {
@@ -95,7 +95,7 @@ public class KafkaSender extends Thread{
 
     public static void main(String[] args) throws InterruptedException {
         long start = System.currentTimeMillis();
-        String server = "10.1.1.25:9092";
+        String server = "localhost:9092";
         String topic = "test1";
 
         //将要发送的数据放入KafkaSender

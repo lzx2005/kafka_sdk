@@ -1,4 +1,4 @@
-# 有数Kafka SDK开发包
+# Kafka SDK开发包
 
 ---------------------------------------
 ## Quick Start
@@ -11,7 +11,7 @@ ys_kafka_sdk/out/artifacts/kafkaSDK_jar/kafkaSDK.jar
 
 ## 发送一条数据
 ```java
-import com.yecredit.kafka.producer.YscreditKafkaProducerFactory;
+import YscreditKafkaProducerFactory;
 
 //初始化工厂
 String topic = "test";//这个topic不能有逗号,发送数据必须指定单个topic
@@ -52,7 +52,7 @@ producerFactory.closeProducer(producer);
 
 但也有性能瓶颈，取决于网络状况和Kafka的节点数量**(待验证)**
 
-有数金服内网单节点Kafka
+局域网单节点Kafka
 
 开启30个进程，发送100条数据，耗时`922毫秒`
 
@@ -95,7 +95,7 @@ while (true){
 
 ## 接收数据
 ```java
-import com.yecredit.kafka.consumer.YscreditKafkaConsumer;
+import YscreditKafkaConsumer;
 
 //这个topics可以有逗号，相当于监听多个topic
 String topics = "test,test2,test3";

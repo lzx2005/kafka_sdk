@@ -1,4 +1,4 @@
-package com.yecredit.kafka.consumer;
+package com.lzx2005.kafka.consumer;
 
 import org.apache.kafka.clients.consumer.*;
 
@@ -13,9 +13,9 @@ import java.util.Properties;
  * @date 2016.10.27
  * @version 1.0.0
  */
-public class YscreditKafkaConsumer extends Thread{
+public class KafkaConsumer extends Thread{
 
-    private KafkaConsumer<String,String> consumer;
+    private org.apache.kafka.clients.consumer.KafkaConsumer<String,String> consumer;
     private ArrayList<String> topics;
     private Properties properties;
 
@@ -24,7 +24,7 @@ public class YscreditKafkaConsumer extends Thread{
      * @param topicStr      topic的列表，以逗号','分割，例如:"topic1,topic2,topic3"
      * @param kafkaServers  kafka服务器的地址，也可以以逗号','分割，例如:"localhost:9091,localhost:9092,localhost:9093"
      */
-    public YscreditKafkaConsumer(String topicStr,String kafkaServers){
+    public KafkaConsumer(String topicStr, String kafkaServers){
         super();
         properties = new Properties();
         //加载默认配置
@@ -89,8 +89,8 @@ public class YscreditKafkaConsumer extends Thread{
      * 获取一个KafkaConsumer实例
      * @return
      */
-    private KafkaConsumer<String,String> createConsumer(){
-        KafkaConsumer<String, String> kafkaConsumer = new KafkaConsumer<String, String>(properties);
+    private org.apache.kafka.clients.consumer.KafkaConsumer<String,String> createConsumer(){
+        org.apache.kafka.clients.consumer.KafkaConsumer<String, String> kafkaConsumer = new org.apache.kafka.clients.consumer.KafkaConsumer<String, String>(properties);
         kafkaConsumer.subscribe(topics);
         return kafkaConsumer;
     }
@@ -101,8 +101,8 @@ public class YscreditKafkaConsumer extends Thread{
      */
     public static void main(String[] args){
         String topics = "test1";
-        String kafkaServer = "10.1.1.25:9092";
-        YscreditKafkaConsumer ykc = new YscreditKafkaConsumer(topics,kafkaServer);
+        String kafkaServer = "localhost:9092";
+        KafkaConsumer ykc = new KafkaConsumer(topics,kafkaServer);
         ykc.start();
     }
 
