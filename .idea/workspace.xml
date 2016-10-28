@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6847c905-b929-4c52-bcb6-07d298444410" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/yecredit/kafka/consumer/YscreditKafkaConsumer.java" afterPath="$PROJECT_DIR$/src/main/java/com/lzx2005/kafka/consumer/KafkaConsumer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/yecredit/kafka/producer/YscreditKafkaProducerFactory.java" afterPath="$PROJECT_DIR$/src/main/java/com/lzx2005/kafka/producer/KafkaProducerFactory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/yecredit/kafka/sender/KafkaSender.java" afterPath="$PROJECT_DIR$/src/main/java/com/lzx2005/kafka/sender/KafkaSender.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/kafkaSDK_jar/kafkaSDK.jar" afterPath="$PROJECT_DIR$/out/artifacts/kafkaSDK_jar/kafkaSDK.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/KafkaSdkTest$1.class" afterPath="$PROJECT_DIR$/target/test-classes/KafkaSdkTest$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/KafkaSdkTest.class" afterPath="$PROJECT_DIR$/target/test-classes/KafkaSdkTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/defaultKafkaConsumer.properties" afterPath="$PROJECT_DIR$/src/main/resources/defaultKafkaConsumer.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/defaultKafkaProducer.properties" afterPath="$PROJECT_DIR$/src/main/resources/defaultKafkaProducer.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/kafka.properties" afterPath="$PROJECT_DIR$/src/main/resources/kafka.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/junit/KafkaSdkTest.java" afterPath="$PROJECT_DIR$/src/test/junit/KafkaSdkTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/defaultKafkaConsumer.properties" afterPath="$PROJECT_DIR$/target/classes/defaultKafkaConsumer.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/defaultKafkaProducer.properties" afterPath="$PROJECT_DIR$/target/classes/defaultKafkaProducer.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/kafka.properties" afterPath="$PROJECT_DIR$/target/classes/kafka.properties" />
     </list>
     <ignored path="kafkaSDK.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -81,17 +68,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="712">
-              <caret line="96" column="7" selection-start-line="96" selection-start-column="7" selection-end-line="97" selection-end-column="29" />
+            <state relative-caret-position="335">
+              <caret line="121" column="3" selection-start-line="121" selection-start-column="3" selection-end-line="121" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="kafkaSDK.iml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="kafkaSDK.iml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kafkaSDK.iml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -181,7 +168,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/yecredit/kafka/producer/YscreditKafkaProducerFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yecredit/kafka/consumer/YscreditKafkaConsumer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yecredit/kafka/sender/KafkaSender.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/com/lzx2005/kafka/sender/KafkaSender.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lzx2005/kafka/producer/KafkaProducerFactory.java" />
         <option value="$PROJECT_DIR$/src/test/junit/KafkaSdkTest.java" />
@@ -190,6 +176,7 @@
         <option value="$PROJECT_DIR$/src/main/resources/defaultKafkaConsumer.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/defaultKafkaProducer.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/kafka.properties" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -1036,7 +1023,7 @@
       <workItem from="1477534672975" duration="18657000" />
       <workItem from="1477562429947" duration="635000" />
       <workItem from="1477614950506" duration="16028000" />
-      <workItem from="1477645550409" duration="2454000" />
+      <workItem from="1477645550409" duration="2688000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1477556505776</created>
@@ -1339,7 +1326,14 @@
       <option name="project" value="LOCAL" />
       <updated>1477646721055</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="第二次提交">
+      <created>1477648229459</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1477648229459</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1375,7 +1369,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58632000" />
+    <option name="totallyTimeSpent" value="58866000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1397,7 +1391,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910052" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32910052" sideWeight="0.65729165" order="2" side_tool="true" content_ui="tabs" x="481" y="364" width="957" height="312" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910052" sideWeight="0.65729165" order="2" side_tool="true" content_ui="tabs" x="481" y="364" width="957" height="312" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910052" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1449,7 +1443,8 @@
     <MESSAGE value="修改文档字体大小" />
     <MESSAGE value="fitst commit" />
     <MESSAGE value="fitst commit2" />
-    <option name="LAST_COMMIT_MESSAGE" value="fitst commit2" />
+    <MESSAGE value="第二次提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="第二次提交" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1861,18 +1856,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="712">
-          <caret line="96" column="7" selection-start-line="96" selection-start-column="7" selection-end-line="97" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kafkaSDK.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="121" column="3" selection-start-line="121" selection-start-column="3" selection-end-line="121" selection-end-column="3" />
           <folding />
         </state>
       </provider>

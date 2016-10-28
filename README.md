@@ -120,3 +120,7 @@ properties.setProperty("bootstrap.servers","localhost:9093");
 properties.setProperty("zookeeper.session.timeout.ms","400000");
 producer.loadProperties(properties);
 ```
+
+## 反馈与建议
+- 微博：[@lzx2005](http://weibo.com/u/2557929062)，
+- 邮箱：<crow2005@vip.qq.com>
